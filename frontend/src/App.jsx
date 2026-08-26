@@ -1,7 +1,7 @@
+import Login from './pages/login';
+
 function App() {
-  return (
-    <h1>Home Med</h1>
-  );
+  return <Login />;
 }
 
 export default App;

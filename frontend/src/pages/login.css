@@ -1,0 +1,7 @@
+:root {
+  --color-primary: #087443;
+}
+
+.login-page {
+  background-color: var(--color-primary);
+}
