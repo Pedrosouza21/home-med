@@ -1,7 +1,31 @@
 :root {
   --color-primary: #087443;
+  --color-surface: #ffffff;
 }
 
+/* Página principal */
 .login-page {
+  min-height: 100vh;
   background-color: var(--color-primary);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 24px;
 }
+
+/* Card de login */
+.login-card {
+  background-color: var(--color-surface);
+  padding: 32px;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 390px;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 24px;
+}
+
