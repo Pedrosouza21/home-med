@@ -29,3 +29,16 @@
   margin-top: 24px;
 }
 
+@media (max-width: 320px) {
+  .login-card h1 {
+    font-size: 28px;
+  }
+
+  .login-card {
+    padding: 24px;
+  }
+
+  .login-page {
+    padding: 16px;
+  }
+}
