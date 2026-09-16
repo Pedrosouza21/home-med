@@ -29,7 +29,64 @@
   margin-top: 24px;
 }
 
-@media (max-width: 320px) {
+.login-form input {
+  padding: 12px;
+  border: 1px solid #cccccc;
+  font-size: 16px;
+  border-radius: 6px;
+  width: 100%;
+}
+
+.login-form button {
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  color: var(--color-surface);
+  font-size: 16px;
+  font-weight: bold;
+  background-color: var(--color-primary);
+  cursor:pointer;
+}
+
+.login-form button:hover {
+  background-color: #065c33;
+}
+
+.login-form input:focus {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+}
+
+.login-form button:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+}
+
+.logo {
+  color: var(--color-primary);
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.login-card h1 {
+  font-size: 28px;
+  margin: 16px 0 12px;
+}
+
+.login-card p {
+  color: #555555;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.login-form label {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+
+/* Responsividade*/
+@media (max-width: 480px) {
   .login-card h1 {
     font-size: 28px;
   }

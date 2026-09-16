@@ -4,7 +4,7 @@ function Login() {
   return (
     <main className="login-page">
       <section className="login-card">
-        <div className="logo">HomeMed</div>
+        <div className="logo"></div>
         <h1>Bem-vindo à HomeMed</h1>
         <p>Entre para acompanhar pacientes e atendimentos.</p>
 
