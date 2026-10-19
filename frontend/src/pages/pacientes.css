@@ -56,6 +56,16 @@
   background-color: #f8dddd;
 }
 
+.patients-empty {
+  max-width: 700px;
+  padding: 24px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  color: #555;
+  text-align: center;
+}
+
 /* Responsividade*/
 @media (max-width: 480px) {
   .patients-page {
