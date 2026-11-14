@@ -1,7 +1,8 @@
-import Login from './pages/login';
+
+import Pacientes from './pages/pacientes';
 
 function App() {
-  return <Login />;
+  return <Pacientes />;
 }
 
 export default App;
