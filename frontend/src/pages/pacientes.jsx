@@ -1,13 +1,7 @@
 import { useState } from "react";
 import "./pacientes.css";
 
-const patients = [
-  { id: 1, name: "Maria Aparecida", status: "Ativo" },
-  { id: 2, name: "João Silva", status: "Inativo" },
-  { id: 3, name: "Ana Lima", status: "Ativo" },
-];
-
-function Pacientes() {
+function Pacientes({ patients }) {
   const [searchTerm, setSearchTerm] = useState("");
 
   const filteredPatients = patients.filter((patient) =>
@@ -21,14 +15,18 @@ function Pacientes() {
       <h1>Pacientes</h1>
 
       <div className="patients-search">
-        <label htmlFor="patient-search">Buscar paciente</label>
+        <label htmlFor="patient-search">
+          Buscar paciente
+        </label>
 
         <input
           type="search"
           id="patient-search"
           placeholder="Digite o nome do paciente"
           value={searchTerm}
-          onChange={(event) => setSearchTerm(event.target.value)}
+          onChange={(event) =>
+            setSearchTerm(event.target.value)
+          }
         />
       </div>
 
