@@ -1,7 +1,7 @@
 import { useState } from "react";
 import "./pacientes.css";
 
-function Pacientes({ patients }) {
+function Pacientes({ patients, onEditPatient }) {
   const [searchTerm, setSearchTerm] = useState("");
 
   const filteredPatients = patients.filter((patient) =>
@@ -36,15 +36,24 @@ function Pacientes({ patients }) {
             <li key={patient.id}>
               <strong>{patient.name}</strong>
 
-              <span
-                className={`patient-status ${
-                  patient.status === "Ativo"
-                    ? "is-active"
-                    : "is-inactive"
-                }`}
-              >
-                {patient.status}
-              </span>
+              <div className="patient-actions">
+                <span
+                  className={`patient-status ${
+                    patient.status === "Ativo"
+                      ? "is-active"
+                      : "is-inactive"
+                  }`}
+                >
+                  {patient.status}
+                </span>
+
+                <button
+                  type="button"
+                  onClick={() => onEditPatient(patient)}
+                >
+                  Editar
+                </button>
+              </div>
             </li>
           ))}
         </ul>

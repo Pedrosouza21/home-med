@@ -81,3 +81,18 @@
     flex-shrink: 0;
   }
 }
+
+.patient-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.patient-actions button {
+  padding: 6px 10px;
+  border: 1px solid #087443;
+  border-radius: 6px;
+  color: #087443;
+  background-color: #ffffff;
+  cursor: pointer;
+}

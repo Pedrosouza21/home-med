@@ -12,10 +12,19 @@ function App() {
     ]);
   }
 
+  function handleEditPatient(patient) {
+    console.log("Paciente selecionado:", patient);
+  }
+
+
   return (
     <>
       <CadastroPaciente onAddPatient={handleAddPatient} />
-      <Pacientes patients={patients} />
+
+      <Pacientes
+        patients={patients}
+        onEditPatient={handleEditPatient}
+      />
 
       <p>Pacientes cadastrados: {patients.length}</p>
     </>
